@@ -1,7 +1,7 @@
 # This settings can be used to create repo level settings
 repository: 
   # Name of the repo
-  name: tsh-staging-test
+  name: tsh-staging-test1
  
   # Create the repo if it is not existing
   force_create: true
