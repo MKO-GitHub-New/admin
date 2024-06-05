@@ -47,10 +47,10 @@ repository:
   
   # Either `true` to enable projects for this repository, or `false` to disable them.
   # If projects are disabled for the organization, passing `true` will cause an API error.
-  has_projects: true
+  has_projects: false
   
   # Either `true` to enable the wiki for this repository, `false` to disable it.
-  has_wiki: true
+  has_wiki: false
   
   # The default branch for this repository.
   default_branch: main
@@ -58,7 +58,7 @@ repository:
   # Desired language or platform [.gitignore template](https://github.com/github/gitignore) 
   # to apply. Use the name of the template without the extension. 
   # For example, "Haskell".
-  gitignore_template: node
+  #gitignore_template: node
   
   # Choose an [open source license template](https://choosealicense.com/) 
   # that best suits your needs, and then use the 
@@ -119,19 +119,19 @@ labels:
 # * `push` - can pull and push, but not administer this repository.
 # * `admin` - can pull, push and administer this repository.
 # * `<custom role> - Give the custom role name
-collaborators:
-- username: drstrange
-  permission: push
-- username: beetlejuice
-  permission: pull
-  exclude:
-  - actions-demo
+# collaborators:
+# - username: drstrange
+#   permission: push
+# - username: beetlejuice
+#   permission: pull
+#   exclude:
+#   - actions-demo
 # You can exclude a list of repos for this collaborator and all repos except these repos would have this collaborator
-- username: thor
-  permission: push
-  include:
-  - actions-demo
-  - another-repo
+# - username: thor
+#   permission: push
+#   include:
+#   - actions-demo
+#   - another-repo
 # You can include a list of repos for this collaborator and only those repos would have this collaborator
 
 # See https://developer.github.com/v3/teams/#add-or-update-team-repository for available options
@@ -149,7 +149,7 @@ teams:
 # You can exclude a list of repos for this collaborator and all repos except these repos would have this collaborator
 
 # Autolinks
-autolinks:
+# autolinks:
   # - key_prefix: ASDF-
   #   url_template: https://jira.company.com/browse/ASDF-<num>
   # - key_prefix: BOLIGRAFO-
